@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'dewberry'; 
+    src: url('Dewberry_bold.ttf'); 
+   }
+   
+ @font-face {
+    font-family: 'parker'; 
+    src: url("Parker.ttf"); 
+}
+   
+@font-face {
+    font-family: 'dot'; 
+    src: url("Bemount.ttf"); 
+   }
+   
+@font-face {
+    font-family: 'init'; 
+    src: url("Decomart FF 4F.ttf"); 
+   }
+   
+canvas {
+	display: inline;
+}
+body{
+	overflow: hidden; 
+	height: 100%;
+	margin: 0;
+    padding: 0;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 200px) and (max-device-width: 900px) and (orientation: portrait) { 
+img.photo{
+	width: 45vh;
+	margin-top:30%;
+}
+
+img.icon{
+  margin-right:3%;
+  margin-top:4%;
+  width: 20vw;
+}	
+
+article.intro{
+font-size: 300%;
+margin-top:10%;
+}
+
+article.text{
+margin-left:10%;
+margin-right:10%;
+font-size: 2vh;
+}
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 200px) and (max-device-width: 900px) and (orientation: landscape) { 
+ img.photo{
+  margin-top:10%;
+  width: 35vw;
+ }
+	
+img.icon{
+   margin-right:3%;
+   margin-top:10%;
+   width: 15vh;
+}	
+
+article.intro{
+font-size: 3vw;
+}
+
+article.text{
+margin-left:5%;
+margin-right:5%;
+font-size: 2vw;
+}
+
+div.container {
+    margin-top:-5%;
+    background :url(./crw.png) 100% 100% no-repeat;
+    height: 59px;
+	width: 86px;
+    background-size:cover;
+  }
+  
+img.hiding{
+display: none
+}
+
+}
+
+ /*Laptop */
+@media screen and (min-device-width: 1000px)  { 
+img.hiding{
+	width: 45vmin;
+}
+
+div.container {
+    margin-top:-3%;
+}
+
+img.photo{
+	width: 80vmin;
+	margin: 3%
+}
+
+img.icon{
+	margin-right:3%;
+	margin-top:2%;
+	width: 20vmin;
+}
+
+article.intro{
+	font-size: 6vmin;
+	margin-top:-3%;
+}
+
+article.text{
+	margin-left:5%;
+	margin-right:5%;
+	font-size: 4vmin;
+}
+
+article.mail{
+	font-size: 4.6vmin;
+}
+}
+
+img.link{
+	width: 19vmin;
+	height: 19vmin;
+}
+
+article{
+font-family: 'dewberry';
+color: #FAF9F7;
+font-size: 30px;
+line-height: 0.9em;
+}
+article.text{
+font-family: 'parker';
+text-align: justify;
+}
+span{
+font-family: 'dot';
+}
+
+article.intro{
+color: #94DEE2;
+line-height: 0.1em;
+font-family: 'init';
+}
+
+#layer1,
+#layer2,
+#layer3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#layer2 {
+  z-index: 10;
+}
+#layer3 {
+  z-index: 5;
+}
+.fp-section.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="overflow: hidden; height: 100%;" class="fp-enabled" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hello, Oh My Look!</title>
+
+    <link rel="icon" type="image/png" href="ohmylook/crw.png">
+    <link rel="stylesheet" type="text/css" href="ohmylook/jquery.css">
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="ohmylook/jquery_003.js"></script>
+    <script src="ohmylook/jquery_002.js"></script>
+    <script type="text/javascript" src="ohmylook/jquery.js"></script>
+    <script type="text/javascript" src="ohmylook/canvas.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#FAF9F7', '#94DEE2', '#f6d0da'],
+                anchors: ['hello', 'about', 'contact'],
+                css3: true,
+                scrollingSpeed: 1000
+            });
+
+        });
+    </script>
+    
+</head>
+<body style>
+<div style="height: 100%; position: relative; transition: all 1000ms ease 0s; transform: translate3d(0px, -1314px, 0px);" id="fullpage">
+ 
+          
+    <div data-anchor="hello" class="section">
+        <div id="layer1">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="layer3" align="right" >  
+                <img src="ohmylook/ohmyicon.png" class="icon">
+            </div>
+        <div id="layer2" align="center">  
+            <img src="ohmylook/photo3.png" class="photo" align="middle">
+            <article class="intro">
+                 <p>Привет!
+                 <p>Меня зовут Аня, мне 21 и я хочу</p>
+                 <p>  стать стилистом в Oh My Look!</p>
+            </article>
+        </div>
+    </div>
+
+    <div data-anchor="about"  class="section">
+        
+        <div align="center">
+            <div class="container">
+                <img src="ohmylook/trim.png" class="hiding">
+            </div>
+            <article class="text">
+             <p>Меня зовут Аннушка. За моими плечами 21 год счастливой жизни и 2 высших образования<span>:</span> экономическое <span>(</span>административный менеджмент<span>)</span> и филологическое <span>(</span>русский язык и литература<span>)</span>. Будучи студенткой, пробовала свои силы в сфере торговли на разных должностях<span>:</span> от промоутера до продавца-консультанта. Сейчас работаю корректором в экономическом журнале. Уже понимаю, что это не работа моей мечты, потому что здесь нет возможности проявить свои лучшие навыки и качества. Среди них, кстати говоря, ответственность и обучаемость, доброжелательность и коммуникабельность. Долгое время я мечтала найти место, где пригодятся мои жизнерадостность, любовь к красивым вещам и хорошему сервису, умение говорить с людьми на их языке и неустанная жажда совершенствоваться. Я давно наблюдаю за вашим развитием и успехами, за тем, как создавался сервис, по-настоящему ориентированный на клиента, и, вы и представить не можете, как я обрадовалась, узнав, что вы открываетесь в Харькове, ведь Oh My Look! - то самое волшебное место, где я могу и очень хочу быть полезной. Хочу каждый день делать этот мир чуточку ярче и счастливее на несколько прекрасных девушек.</p>
+            </article>
+             <img src="ohmylook/trim2.png" class="hiding">
+        </div>
+    </div>
+
+    <div data-anchor="contact" class="section">
+        <div align="center" >
+            <a href="https://vk.com/annasnezhko" target="_blank"> <img src="ohmylook/vk.png"  class="link"> </a>
+            <a href="https://www.instagram.com/annasnezhko" target="_blank"> <img src="ohmylook/instagram.png"  class="link"> </a>
+            <a href="https://www.facebook.com/anya.snezhko" target="_blank"> <img src="ohmylook/facebook.png"  class="link"> </a>
+           <article class="mail">
+             <p>+38 063 105 37 05</p>
+             <p>anna.snezhko.working@gmail.com</p>
+           </article>
+       </div>  
+    </div>
+
+</div>
+</body></html>
